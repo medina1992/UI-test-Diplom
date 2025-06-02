@@ -13,10 +13,22 @@
 
 <a id="tools"></a>
 ## ☑️ Технологии и инструменты:
-- IntelliJ
-- IDEAd
-- Github
-- JUnit 5
+
+<p align="center">
+<img width="50px" title="IntelliJ IDEA" src="media/icons/Intelij_IDEA.png">
+<img width="50px" title="Java" src="media/icons/Java.png"> 
+<img width="50px" title="Java" src="media/icons/Selenide.svg"> 
+<img width="50px" title="Selenoid" src="media/icons/Selenoid.png">
+<img width="50px" title="Allure Report" src="media/icons/Allure_Report.png">
+<img width="50px" title="Gradle" src="media/icons/Gradle.png">
+<img width="50px" title="JUnit5" src="media/icons/JUnit5.png">
+<img width="50px" title="JUnit5" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+<img width="50px" title="Jenkins" src="media/icons/AllureTestOps.svg">
+<img width="50px" title="Telegram" src="media/icons/Telegram.png">
+
+</p>
+
+
 
 ## ☑️ Реализованные проверки:
 
@@ -81,15 +93,9 @@ ____
 Примеры видео выполнения тестов на Selenoid
 ____
 <p align="center">
-  <video width="550" height="350" controls>
-    <source src="media/video1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <img src="media/video1.gif" alt="Demo" width="500">
 </p>
 
 <p align="center">
-  <video width="550" height="350" controls>
-    <source src="media/video2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <img src="media/video2.gif" alt="Demo" width="500">
 </p>
