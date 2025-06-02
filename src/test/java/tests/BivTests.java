@@ -1,12 +1,19 @@
 package tests;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.*;
 
-@Tag("Biv")
+@Epic("Biv")
+@Feature("Header")
+@Story("Меню")
+@Owner("medina")
+@Severity(SeverityLevel.NORMAL)
+
+@Tag("Позитивный сценарий")
 public class BivTests extends TestBase {
 
     private MainBivPage mainPage;
