@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.*;
 
+import static com.codeborne.selenide.Selenide.open;
+
 @Epic("Biv")
 @Feature("Header")
 @Story("Меню")
@@ -14,7 +16,7 @@ import pages.*;
 @Severity(SeverityLevel.NORMAL)
 
 @Tag("WEB")
-@DisplayName("Тесты для страницы 'Карьера'")
+@DisplayName("Тесты для BIVgroup ")
 public class BivTests extends TestBase {
 
     private MainBivPage mainPage;
@@ -29,12 +31,12 @@ public class BivTests extends TestBase {
     public void setUp() {
 
         mainPage = MainBivPage.openPage();
-
         aboutAnchorPage = new AboutAnchorPage();
         clientsAnchorPage = new ClientsAnchorPage();
         directionsAnchorPage = new DirectionsAnchorPage();
         technologiesAnchorPage = new TechnologiesAnchorPage();
     }
+
 
     @Test
     @Tag("REGRESSION")
