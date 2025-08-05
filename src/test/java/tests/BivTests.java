@@ -7,8 +7,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.*;
 
-import static com.codeborne.selenide.Selenide.open;
-
 @Epic("Biv")
 @Feature("Header")
 @Story("Меню")
@@ -42,7 +40,7 @@ public class BivTests extends TestBase {
     @Tag("REGRESSION")
     @Story("Позитивный тест")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("1. Проверяем количество кнопок в header меню")
+    @DisplayName("Проверяем количество кнопок в header меню")
     void startPageCheckHeaderContainerTest() {
         mainPage.headerContainer(7);
     }
@@ -51,7 +49,7 @@ public class BivTests extends TestBase {
     @Tag("SMOKE")
     @Story("Позитивный тест")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("2. Открываем страницу О компании и видим заголовок О компании")
+    @DisplayName("Открываем страницу О компании и видим заголовок О компании")
     void aboutAnchorPageTest() {
         mainPage.clickAbout();
         aboutAnchorPage.checkAboutAnchorTextTest("О компании");
@@ -61,7 +59,7 @@ public class BivTests extends TestBase {
     @Tag("SMOKE")
     @Story("Позитивный тест")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("3. Открываем страницу Направления и проверяем заголовок Направления")
+    @DisplayName("Открываем страницу Направления и проверяем заголовок Направления")
     void directionsPageTest() {
         mainPage.clickDirections();
         directionsAnchorPage.checkDirectionsAnchorPageTest("Направления");
@@ -71,7 +69,7 @@ public class BivTests extends TestBase {
     @Tag("REGRESSION")
     @Story("Позитивный тест")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("4. Открываем страницу Технологии и видим в заголовках Технологии")
+    @DisplayName("Открываем страницу Технологии и видим в заголовках Технологии")
     void productsPageTest() {
         mainPage.clickTechnologies();
         technologiesAnchorPage.checkTechnologiesAnchorPageTest("Технологии");
@@ -81,7 +79,7 @@ public class BivTests extends TestBase {
     @Tag("SMOKE")
     @Story("Позитивный тест")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("5. Открываем страницу Клиенты и видим в заголовках Клиенты")
+    @DisplayName("Открываем страницу Клиенты и видим в заголовках Клиенты")
     void awardsPageTest() {
         mainPage.clickClients();
         clientsAnchorPage.checkClientsAnchorPageTest("Клиенты");
@@ -92,7 +90,7 @@ public class BivTests extends TestBase {
     @Tag("REGRESS")
     @Story("Позитивный тест")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("6. Кликаем на 'Написать нам' и видим в заголовках 'Обратная связь'")
+    @DisplayName("Кликаем на 'Написать нам' и видим в заголовках 'Обратная связь'")
     void contactsPageTest() {
         mainPage.clickContactsAnchor();
         new ContactsAnchor().checkContactsAnchorTest("Обратная связь");
@@ -103,7 +101,7 @@ public class BivTests extends TestBase {
     @Tag("NEGATIVE")
     @Story("Негативный тест")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("7. Проверка отправки формы 'Обратная связь' без заполнения полей")
+    @DisplayName("Проверка отправки формы 'Обратная связь' без заполнения полей")
     void unSuccessfulFormSendTest() {
         mainPage.clickSubmitFormBtn();
         mainPage.checkAllRequiredFieldErrors();

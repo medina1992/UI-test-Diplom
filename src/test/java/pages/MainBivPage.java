@@ -10,19 +10,17 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MainBivPage {
-
-
-    private final SelenideElement aboutLink = $("a[href='/#aboutAnchor']");
-    private final SelenideElement directionsLink = $("a[href='/#directionsAnchor']");
-    private final SelenideElement technologiesLink = $("a[href='/#technologiesAnchor']");
-    private final SelenideElement clientsLink = $("a[href='/#clientsAnchor']");
-    private final SelenideElement contactsAnchor = $("a[href='/#contactsAnchor']");
-    private final SelenideElement submitFormBtn = $("button[type='submit']");
+    private final SelenideElement
+            aboutLink = $("a[href='/#aboutAnchor']"),
+            directionsLink = $("a[href='/#directionsAnchor']"),
+            technologiesLink = $("a[href='/#technologiesAnchor']"),
+            clientsLink = $("a[href='/#clientsAnchor']"),
+            contactsAnchor = $("a[href='/#contactsAnchor']"),
+            submitFormBtn = $("button[type='submit']");
     private final ElementsCollection errorMessagesForField = $$(".error-text");
 
     @Step("Открываем главную страницу")
     public static MainBivPage openPage() {
-
         open("https://bivgroup.ru/");
         return new MainBivPage();
     }
