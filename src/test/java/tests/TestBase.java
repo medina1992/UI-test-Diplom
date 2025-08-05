@@ -14,13 +14,15 @@ import java.util.Map;
 
 public class TestBase {
 
+
     @BeforeAll
     static void browserConfiguration() {
 
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("browserVersion", "128.0");
-        Configuration.timeout = 2000;
+        Configuration.browserVersion = System.getProperty("browserVersion", "126.0");
+        Configuration.timeout = 60000;
+        Configuration.screenshots = true;
         Configuration.remote = System.getProperty("remoteUrl", "http://selenoid.autotests.cloud:4444/wd/hub");
         DesiredCapabilities capabilities = new DesiredCapabilities();
 

@@ -13,7 +13,8 @@ import pages.*;
 @Owner("medina")
 @Severity(SeverityLevel.NORMAL)
 
-@Tag("Позитивный сценарий")
+@Tag("WEB")
+@DisplayName("Тесты для страницы 'Карьера'")
 public class BivTests extends TestBase {
 
     private MainBivPage mainPage;
@@ -36,12 +37,18 @@ public class BivTests extends TestBase {
     }
 
     @Test
+    @Tag("REGRESSION")
+    @Story("Позитивный тест")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("1. Проверяем количество кнопок в header меню")
     void startPageCheckHeaderContainerTest() {
         mainPage.headerContainer(7);
     }
 
     @Test
+    @Tag("SMOKE")
+    @Story("Позитивный тест")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("2. Открываем страницу О компании и видим заголовок О компании")
     void aboutAnchorPageTest() {
         mainPage.clickAbout();
@@ -49,13 +56,19 @@ public class BivTests extends TestBase {
     }
 
     @Test
+    @Tag("SMOKE")
+    @Story("Позитивный тест")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("3. Открываем страницу Направления и проверяем заголовок Направления")
-    void contactsPageTest() {
+    void directionsPageTest() {
         mainPage.clickDirections();
         directionsAnchorPage.checkDirectionsAnchorPageTest("Направления");
     }
 
     @Test
+    @Tag("REGRESSION")
+    @Story("Позитивный тест")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("4. Открываем страницу Технологии и видим в заголовках Технологии")
     void productsPageTest() {
         mainPage.clickTechnologies();
@@ -63,10 +76,36 @@ public class BivTests extends TestBase {
     }
 
     @Test
+    @Tag("SMOKE")
+    @Story("Позитивный тест")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("5. Открываем страницу Клиенты и видим в заголовках Клиенты")
     void awardsPageTest() {
         mainPage.clickClients();
         clientsAnchorPage.checkClientsAnchorPageTest("Клиенты");
 
     }
+
+    @Test
+    @Tag("REGRESS")
+    @Story("Позитивный тест")
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("6. Кликаем на 'Написать нам' и видим в заголовках 'Обратная связь'")
+    void contactsPageTest() {
+        mainPage.clickContactsAnchor();
+        new ContactsAnchor().checkContactsAnchorTest("Обратная связь");
+
+    }
+
+    @Test
+    @Tag("NEGATIVE")
+    @Story("Негативный тест")
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("7. Проверка отправки формы 'Обратная связь' без заполнения полей")
+    void unSuccessfulFormSendTest() {
+        mainPage.clickSubmitFormBtn();
+        mainPage.checkAllRequiredFieldErrors();
+    }
+
+
 }
