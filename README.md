@@ -13,7 +13,7 @@
 
 
 <a id="tools"></a>
-## ☑️ Технологии и инструменты:
+## 💻 Технологии и инструменты:
 
 <div align="center">
   <table>
@@ -81,7 +81,7 @@
 
 
 
-## ☑️ Реализованные проверки:
+### ☑️ Реализованные проверки:
 
 - Проверяем количество кнопок в header меню"
 - Открываем страницу О компании и видим заголовок "О компании"
@@ -89,7 +89,7 @@
 - Открываем страницу Технологии и видим в заголовках "Технологии"
 - Открываем страницу Клиенты и видим в заголовке "Клиенты"
 
-## ☑️ Удаленный запуск [Jenkins](https://jenkins.autotests.cloud/job/biv-tests/)
+##  [<img src="media/logo/Jenkins.svg" width="40" height="40" alt="Jenkins"> Запуск тестов в Jenkins](https://jenkins.autotests.cloud/job/035-Azkeww-hw16/) 
 
 
 <p align="center">  
@@ -97,14 +97,14 @@
 </p>
 
 
-## ☑️ Параметры сборки в Jenkins:
+### ☑️ Параметры сборки в Jenkins:
 
 - browser (браузер, по умолчанию chrome)
 - browserVersion (версия браузера, по умолчанию 127.0)
 - browserSize (размер окна браузера, по умолчанию 1920x1080)
 
 
-## Команда для запуска из терминала
+### Команда для запуска из терминала
 Локальный запуск
 ```bash
 gradle clean UseTech
@@ -122,26 +122,39 @@ clean UseTech
 -DbrowserRemote="https://log:pass@${BROWSER_REMOTE}/wd/hub"
 ```
 
-## ☑️ Allure Report	
+## [<img src="media/logo/Allure.svg" width="40" height="40" alt="Allure"> Allure-отчет](https://jenkins.autotests.cloud/job/035-Azkeww-hw16/4/allure/)
 
 
-## ☑️ Основная страница отчёта
+### ☑️ Главная страница Allure-отчета
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/allur.png" width="850">  
-</p>  
-
-____
-## ☑️ Allure Уведомление в Telegram при помощи бота
-____
+<img title="Allure Overview Dashboard" src="media/reports/allurReport1.png" width="850">  
+</p> 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/tgbot.png" width="550">  
+<img title="Allure Overview Dashboard" src="media/reports/allurReport2.png" width="850">  
+</p>
+<p align="center">  
+<img title="Allure Overview Dashboard" src="media/reports/allurReport3.png" width="850">  
+</p>
+
+### ☑️ График
+<p align="center">  
+<img title="Allure Overview Dashboard" src="media/reports/graphics.png" width="850">  
 </p>
 
 ____
-## ☑️ Selenoid
+### <img src="media/logo/Telegram.svg" width="40" height="40" alt="Allure"> Allure Уведомление в Telegram при помощи бота
+____
+<p align="center">  
+<img title="Allure Overview Dashboard" src="media/reports/telegram.png" width="850">  
+</p>
 
-Примеры видео выполнения тестов на Selenoid
+### После завершения сборки, бот, созданный в Telegram, автоматически обрабатывает и отправляет сообщение с результатом
+
+____
+## <img src="media/icons/Selenoid.png" width="40" height="40" alt="Selenoid"> Selenoid
+
+###   ☑️ Примеры видео выполнения тестов на Selenoid
 ____
 <p align="center">
   <img src="media/video1.gif" alt="Demo" width="500">
