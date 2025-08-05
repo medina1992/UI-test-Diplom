@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.*;
 
+
 @Epic("Biv")
 @Feature("Header")
 @Story("Меню")
@@ -27,7 +28,6 @@ public class BivTests extends TestBase {
 
     @BeforeEach
     public void setUp() {
-
         mainPage = MainBivPage.openPage();
         aboutAnchorPage = new AboutAnchorPage();
         clientsAnchorPage = new ClientsAnchorPage();
