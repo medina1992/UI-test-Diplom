@@ -95,7 +95,7 @@
 
 
 <p align="center">  
-<img src="media/jenkinsBuild.png" alt="Jenkins" width="950"/></>  
+<img src="media/reports/jenkinsNew.png" alt="Jenkins" width="950"/></>  
 </p>
 
 
@@ -138,17 +138,19 @@ clean UseTech
 <p align="center">  
 <img title="Allure Overview Dashboard" src="media/reports/allurReport3.png" width="850">  
 </p>
-
+<p align="center">  
+<img title="Allure Overview Dashboard" src="media/reports/allur4.png" width="850">  
+</p>
 ### ☑️ График
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/reports/graphics.png" width="850">  
+<img title="Allure Overview Dashboard" src="media/reports/graphicsNew.png" width="850">  
 </p>
 
 ____
 ### <img src="media/logo/Telegram.svg" width="40" height="40" alt="Allure"> Allure Уведомление в Telegram при помощи бота
 ____
 <p align="center">  
-<img title="Allure Overview Dashboard" src="media/reports/telegram.png" width="850">  
+<img title="Allure Overview Dashboard" src="media/reports/telegramNew.png" width="850">  
 </p>
 
 ### После завершения сборки, бот, созданный в Telegram, автоматически обрабатывает и отправляет сообщение с результатом
