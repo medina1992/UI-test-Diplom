@@ -17,13 +17,11 @@ import pages.*;
 @Tag("WEB")
 @DisplayName("Тесты для BIVgroup ")
 public class BivTests extends TestBase {
-
     private MainBivPage mainPage;
     private AboutAnchorPage aboutAnchorPage;
     private ClientsAnchorPage clientsAnchorPage;
     private DirectionsAnchorPage directionsAnchorPage;
     private TechnologiesAnchorPage technologiesAnchorPage;
-
 
     @BeforeEach
     public void setUp() {
@@ -34,7 +32,6 @@ public class BivTests extends TestBase {
         technologiesAnchorPage = new TechnologiesAnchorPage();
 
     }
-
 
     @Test
     @Tag("REGRESSION")

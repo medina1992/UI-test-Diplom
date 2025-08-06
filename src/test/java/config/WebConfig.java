@@ -13,7 +13,7 @@ public interface WebConfig extends Config {
     String getBrowserName();
 
     @Key("browserVersion")
-    @DefaultValue("113")
+    @DefaultValue("128")
     String getBrowserVersion();
 
     @Key("browserSize")
@@ -25,7 +25,7 @@ public interface WebConfig extends Config {
     String getBaseUrl();
 
     @Key("remoteUrl")
-    @DefaultValue("https://medina:67920013Medina.@selenoid.autotests.cloud/wd/hub")
+    @DefaultValue("https://bivgroup.ru/")
     URL getRemoteUrl();
 
     @Key("isRemote")
