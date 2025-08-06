@@ -19,9 +19,10 @@ public class ProjectConfiguration {
         Configuration.browserVersion = webConfig.getBrowserVersion();
         Configuration.pageLoadStrategy = "eager";
 
-        if (webConfig.isRemote()) {
+        if ("true".equalsIgnoreCase(webConfig.isRemote())) {
             Configuration.remote = String.valueOf(webConfig.getRemoteUrl());
             DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("browserVersion", Configuration.browserVersion);
             capabilities.setCapability("selenoid:options", Map.of(
                     "enableVNC", true,
                     "enableVideo", true

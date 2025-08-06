@@ -30,5 +30,5 @@ public interface WebConfig extends Config {
 
     @Key("isRemote")
     @DefaultValue("false")
-    boolean isRemote();
+    String isRemote();
 }
