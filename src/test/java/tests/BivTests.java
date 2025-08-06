@@ -24,7 +24,6 @@ public class BivTests extends TestBase {
     private DirectionsAnchorPage directionsAnchorPage;
     private TechnologiesAnchorPage technologiesAnchorPage;
 
-    private static final int HEADER_BUTTONS_COUNT = 7;
 
     @BeforeEach
     public void setUp() {
@@ -33,6 +32,7 @@ public class BivTests extends TestBase {
         clientsAnchorPage = new ClientsAnchorPage();
         directionsAnchorPage = new DirectionsAnchorPage();
         technologiesAnchorPage = new TechnologiesAnchorPage();
+
     }
 
 
@@ -93,7 +93,7 @@ public class BivTests extends TestBase {
     @DisplayName("Кликаем на 'Написать нам' и видим в заголовках 'Обратная связь'")
     void contactsPageTest() {
         mainPage.clickContactsAnchor();
-        new ContactsAnchor().checkContactsAnchorTest("Обратная связь");
+        new ContactsAnchorPage().checkContactsAnchorTest("Обратная связь");
 
     }
 
